@@ -1,0 +1,20 @@
+{
+  "name": "prisma-issue-27442",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "migration:migrate": "npx prisma migrate dev --name",
+    "prisma:format": "npx prisma format"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "prisma": "^6.6.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.6.0"
+  }
+}
