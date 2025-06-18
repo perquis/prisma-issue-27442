@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "migration:migrate": "npx prisma migrate dev --name",
-    "prisma:format": "npx prisma format"
+    "prisma:reset:db": "npx prisma migrate reset",
+    "migration:run": "npx prisma migrate deploy",
+    "prisma:generate": "npx prisma generate",
+    "prisma:format": "npx prisma format",
+    "postinstall": "npm run prisma:generate"
   },
   "keywords": [],
   "author": "",
